@@ -550,8 +550,8 @@ thanks to the @rstudio folks for working on this infrastructure.</p>
 </div>
 
 <ul>
-<li>Based on &quot;three-table&quot; design</li>
-<li>Scripts can define coordinate space</li>
+<li>Based on classic &quot;three-table&quot; design in genomic data analysis</li>
+<li><strong>Data providers define coordinate space</strong></li>
 </ul>
 
   </article>
@@ -569,27 +569,6 @@ thanks to the @rstudio folks for working on this infrastructure.</p>
 </slide>
 
 <slide class="" id="slide-30" style="background:;">
-  <hgroup>
-    <h2>Build your own browser</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
-<li>Standalone version (no internet required, javascript code provided in <code>epivizr</code>)</li>
-<li>Browse your favorite genome:</li>
-</ul>
-
-<pre><code class="r">library(epivizr)
-library(Mus.musculus)
-
-mgr &lt;- startStandalone(geneInfo=Mus.musculus, geneInfoName=&quot;mm10&quot;,
-                          keepSeqlevels=paste0(&quot;chr&quot;,c(1:19,&quot;X&quot;,&quot;Y&quot;)))
-</code></pre>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>Analysis era</h2>
   </hgroup>
@@ -613,7 +592,7 @@ mgr &lt;- startStandalone(geneInfo=Mus.musculus, geneInfoName=&quot;mm10&quot;,
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-32" style="background:;">
+<slide class="" id="slide-31" style="background:;">
   <hgroup>
     <h2>Visualization goals</h2>
   </hgroup>
@@ -635,7 +614,7 @@ mgr &lt;- startStandalone(geneInfo=Mus.musculus, geneInfoName=&quot;mm10&quot;,
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-33" style="background:;">
+<slide class="" id="slide-32" style="background:;">
   <hgroup>
     <h2>Visualization goals</h2>
   </hgroup>
@@ -660,22 +639,169 @@ mgr &lt;- startStandalone(geneInfo=Mus.musculus, geneInfoName=&quot;mm10&quot;,
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-34" style="background:;">
+<slide class="" id="slide-33" style="background:;">
   <hgroup>
     <h2>Creativity in exploration</h2>
   </hgroup>
   <article data-timings="">
     <p>We are building a software system to support creative exploratory analysis of epigenome-wide datasets...</p>
 
-<p><div class="centered">
+<div class="centered">
 <img src="images/terry.png" style="max-height: 60%; max-width: 60%"/>
-<footer class="source">[T. Speed]</footer></p>
+</div>
+
+<p><footer class="source">[T. Speed]</footer></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Creativity in exploration</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Computed Measurements</strong>: create new measurements from integrated measurements and visualize</p>
+
+<div class="centered">
+<video width="320" height="240" controls>
+  <source src="movies/computed.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
 <slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Creativity in exploration</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><strong>Summarization on the fly</strong>: create new measurements from integrated measurements and visualize</p>
+
+<div class="centered">
+<video width="320" height="240" controls>
+  <source src="movies/groupby.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>What&#39;s next!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Beyond genomics and epigenomics: metagenomics</p>
+
+<div class="centered">
+<img src="images/hmp.png" style="max-width=50%; min-width=50%"/>
+</div>
+
+<p><footer class="source">[Human Microbiome Project]</footer></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>What&#39;s next!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Beyond genomics and epigenomics: metagenomics</p>
+
+<p><strong>Coordinates</strong>:</p>
+
+<div class="centered">
+<img src="images/tree.png" style="max-width=1%; min-width=1%"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>What&#39;s next!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Beyond genomics and epigenomics: metagenomics</p>
+
+<p><strong>Samples</strong>:</p>
+
+<div class="centered">
+<img src="images/meta_heatmap.jpg" style="max-width=50%; min-width=50%"/>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-39" style="background:;">
+  <hgroup>
+    <h2>What&#39;s next!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Beyond genomics and epigenomics: metagenomics</p>
+
+<div class="centered">
+<video width="320" height="240" controls>
+  <source src="movies/metavizr1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-40" style="background:;">
+  <hgroup>
+    <h2>What&#39;s next!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Beyond genomics and epigenomics: metagenomics</p>
+
+<div class="centered">
+<video width="320" height="240" controls>
+  <source src="movies/metavizr2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-41" style="background:;">
+  <hgroup>
+    <h2>Acknowledgements</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="http://www.cs.umd.edu/~florinc/img/florin_chelaru.jpg"/>
+Florin Chelaru, UMD</p>
+
+<ul>
+<li>CBCB@UMD (Pop group)</li>
+<li>JHU/Harvard: Kasper Hansen, Winston Timp, Rafael Irizarry, Andy Feinberg</li>
+<li>Genentech: Michael Lawrence</li>
+<li>Rstudio: Joe Cheng, et al.</li>
+<li>Funding: NIH, Genentech</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-42" style="background:;">
   <hgroup>
     <h2>Check it out:</h2>
   </hgroup>
@@ -695,22 +821,9 @@ Follow us: @epiviz  </p>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-36" style="background:;">
-  <hgroup>
-    <h2>Acknowledgements</h2>
-  </hgroup>
+<slide class="" id="slide-43" style="background:;">
   <article data-timings="">
-    <p><img src="http://www.cs.umd.edu/~florinc/img/florin_chelaru.jpg"/>
-Florin Chelaru, UMD</p>
-
-<ul>
-<li>CBCB@UMD</li>
-<li>JHU/Harvard: Kasper Hansen, Winston Timp, Rafael Irizarry, Andy Feinberg</li>
-<li>Genentech: Michael Lawrence</li>
-<li>Rstudio: Joe Cheng, et al.</li>
-<li>Funding: NIH, Genentech</li>
-</ul>
-
+    
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -895,13 +1008,13 @@ Florin Chelaru, UMD</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=30 title='Build your own browser'>
+        data-slide=30 title='Analysis era'>
          30
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=31 title='Analysis era'>
+        data-slide=31 title='Visualization goals'>
          31
       </a>
     </li>
@@ -913,7 +1026,7 @@ Florin Chelaru, UMD</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=33 title='Visualization goals'>
+        data-slide=33 title='Creativity in exploration'>
          33
       </a>
     </li>
@@ -925,14 +1038,56 @@ Florin Chelaru, UMD</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=35 title='Check it out:'>
+        data-slide=35 title='Creativity in exploration'>
          35
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=36 title='Acknowledgements'>
+        data-slide=36 title='What&#39;s next!'>
          36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='What&#39;s next!'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='What&#39;s next!'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='What&#39;s next!'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title='What&#39;s next!'>
+         40
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=41 title='Acknowledgements'>
+         41
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=42 title='Check it out:'>
+         42
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=43 title=''>
+         43
       </a>
     </li>
   </ul>

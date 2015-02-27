@@ -346,8 +346,8 @@ http://epiviz.cbcb.umd.edu/?ws=cX1PgToUQs&seqName=chr11&start=59463945&end=60638
 <img src="images/datatypes.png" style="max-width=50%; min-width=50%"/>
 </div>
 
-- Based on "three-table" design
-- Scripts can define coordinate space
+- Based on classic "three-table" design in genomic data analysis
+- **Data providers define coordinate space**
 
 ---
 
@@ -355,21 +355,6 @@ http://epiviz.cbcb.umd.edu/?ws=SRHZlWRRAPd&gist[]=a82a998817564ce3fe48&settings=
 <iframe data-src="http://epiviz.cbcb.umd.edu/2/?ws=SRHZlWRRAPd&gist[]=a82a998817564ce3fe48&settings=default&"></iframe>
 
 --- 
-
-## Build your own browser 
-
-- Standalone version (no internet required, javascript code provided in `epivizr`)
-- Browse your favorite genome:
-
-```r
-library(epivizr)
-library(Mus.musculus)
-
-mgr <- startStandalone(geneInfo=Mus.musculus, geneInfoName="mm10",
-    				      keepSeqlevels=paste0("chr",c(1:19,"X","Y")))
-```
-
----
 
 ## Analysis era
 
@@ -418,10 +403,112 @@ We are building a software system to support creative exploratory analysis of ep
 
 <div class="centered">
 <img src="images/terry.png" style="max-height: 60%; max-width: 60%"/>
+</div>
 <footer class="source">[T. Speed]</footer>
 
 ---
 
+## Creativity in exploration
+
+**Computed Measurements**: create new measurements from integrated measurements and visualize
+
+<div class="centered">
+<video width="320" height="240" controls>
+  <source src="movies/computed.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+---
+
+## Creativity in exploration
+
+**Summarization on the fly**: create new measurements from integrated measurements and visualize
+
+<div class="centered">
+<video width="320" height="240" controls>
+  <source src="movies/groupby.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</div>
+
+---
+
+## What's next!
+
+Beyond genomics and epigenomics: metagenomics
+
+<div class="centered">
+<img src="images/hmp.png" style="max-width=50%; min-width=50%"/>
+</div>
+
+<footer class="source">[Human Microbiome Project]</footer>
+
+---
+
+## What's next!
+
+Beyond genomics and epigenomics: metagenomics
+
+**Coordinates**:
+
+<div class="centered">
+<img src="images/tree.png" style="max-width=1%; min-width=1%"/>
+</div>
+
+---
+
+## What's next!
+
+Beyond genomics and epigenomics: metagenomics
+
+**Samples**:
+<div class="centered">
+<img src="images/meta_heatmap.jpg" style="max-width=50%; min-width=50%"/>
+</div>
+
+---
+
+## What's next!
+
+Beyond genomics and epigenomics: metagenomics
+
+<div class="centered">
+<video width="320" height="240" controls>
+  <source src="movies/metavizr1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+
+---
+
+## What's next!
+
+Beyond genomics and epigenomics: metagenomics
+
+<div class="centered">
+<video width="320" height="240" controls>
+  <source src="movies/metavizr2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</div>
+
+---
+
+## Acknowledgements
+
+<img src="http://www.cs.umd.edu/~florinc/img/florin_chelaru.jpg"/>
+Florin Chelaru, UMD
+
+- CBCB@UMD (Pop group)
+- JHU/Harvard: Kasper Hansen, Winston Timp, Rafael Irizarry, Andy Feinberg
+- Genentech: Michael Lawrence
+- Rstudio: Joe Cheng, et al.
+- Funding: NIH, Genentech
+
+---
 
 ## Check it out:
 
@@ -435,18 +522,6 @@ Follow us: @epiviz
 These slides available: http://hcorrada.github.io/campusVis_201502
 
 ---
-
-## Acknowledgements
-
-<img src="http://www.cs.umd.edu/~florinc/img/florin_chelaru.jpg"/>
-Florin Chelaru, UMD
-
-- CBCB@UMD
-- JHU/Harvard: Kasper Hansen, Winston Timp, Rafael Irizarry, Andy Feinberg
-- Genentech: Michael Lawrence
-- Rstudio: Joe Cheng, et al.
-- Funding: NIH, Genentech
-
 
 
 
